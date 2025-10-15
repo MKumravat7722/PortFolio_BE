@@ -11,6 +11,8 @@ gem "puma", ">= 5.0"
 gem "rails_admin"
 gem 'rack-cors'
 gem "image_processing", "~> 1.2"
+gem 'active_model_serializers', '~> 0.10.13'
+
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
