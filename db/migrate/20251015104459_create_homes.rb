@@ -4,6 +4,7 @@ class CreateHomes < ActiveRecord::Migration[8.0]
       t.string :name
       t.string :title
       t.string :subtitle
+      t.text :description
 
       t.timestamps
     end

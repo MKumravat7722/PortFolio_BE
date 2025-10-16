@@ -2,7 +2,14 @@ class ProjectSerializer < ActiveModel::Serializer
   attributes :id, :title, :description, :techStack, :liveUrl, :githubUrl
 
   def techStack
-    JSON.parse(object.tech_stack || "[]")
+    value = object.tech_stack
+
+    begin
+      parsed = JSON.parse(value)
+      parsed.is_a?(Array) ? parsed : [parsed]
+    rescue JSON::ParserError, TypeError
+      value.present? ? [value] : []
+    end
   end
 
   def liveUrl
