@@ -15,7 +15,7 @@ About.destroy_all
 home = Home.create!(
   name: "Mohit Kumravat",
   title: "Full Stack Developer",
-  subtitle: "Building modern, scalable web apps with Ruby on Rails and React"
+  subtitle: "Building modern, scalable web apps with Ruby on Rails and React",
   description: "Welcome to my portfolio backend! I'm Mohit Kumravat, a passionate Full Stack Developer specializing in Ruby on Rails and React. With over 2 years of experience, I create robust web applications that solve real-world problems. Explore my services, skills, and projects to see how I can help bring your ideas to life."
 )
 puts "✅ Home section created"
